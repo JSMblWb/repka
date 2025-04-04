@@ -19,8 +19,11 @@ int dlina(int a, int b, int h) {
     return res3;
 }
 
-bool trap(int a, int b, int c, int d) {
+bool trap(int a, int b, int c, int d, int h) {
     if (a <= 0,  b <= 0,  c <= 0 || d <= 0) {
+        return false;
+    }
+    if (h > c || h > d){
         return false;
     }
     return (a + b + c > d) && (a + b + d > c) && (a + c + d > b) && (b + c + d > a);
@@ -31,7 +34,7 @@ int main() {
     int a, b, h, c, d;
     cout << "длина основания - a, b; высота - h; боковая сторона - c, d: ";
     cin >> a >> b >> h >> c >> d;
-    if (!trap(a, b, c, d)) {
+    if (!trap(a, b, c, d, h)) {
         cout << "Введенные значения не могут образовать трапецию.";
         return 1; 
     }
