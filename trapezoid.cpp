@@ -18,7 +18,7 @@ int dlina(int a, int b, int h) {
     res3 = (a + b) / 2;
     return res3;
 }
-//123
+//13
 
 bool trap(int a, int b, int c, int d, int h) {
     if (a <= 0,  b <= 0,  c <= 0 || d <= 0) {
