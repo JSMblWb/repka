@@ -14,6 +14,7 @@ float diagonal(float a, float b) {
 	return sqrt(a * a + b * b);
 }
 
+<<<<<<< HEAD
 float proverka(float a) {
 	while (a <= 0) {
 		cout << "nekorektnoye chislo: ";
@@ -30,6 +31,13 @@ int main() {
 	cout << "visota: ";
 	cin >> visota;
 	visota = proverka(visota);
+=======
+int main() {
+	float dlina, visota;
+	cout << "dlina i visota: ";
+	cin >> dlina >> visota;
+	cout << "\n";
+>>>>>>> origin/rectangle
 
 	cout << "perimetr: " << perimetr(dlina, visota) << "; ploshad: " << ploshad(dlina, visota) << "; diagonal: " << diagonal(dlina, visota) << endl;
 	return 0;
