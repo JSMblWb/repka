@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//wasuuuup
+
 int per(int a, int b, int c, int d) {
     int res2;
     res2 = a + b + c + d;
